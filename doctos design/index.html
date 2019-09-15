@@ -1,0 +1,502 @@
+<!doctype html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en"> 
+<head>
+	<meta charset="utf-8">
+	<!-- Setting the viewport for Media Query -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Framework</title>
+	<!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+	<link rel="shortcut icon" href="favicon.ico" />	
+	<!-- Adding reference to font awesome -->
+	<link rel="stylesheet" href="assets/vendor/font/fontawesome-all.min.css">
+	<!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+	<link rel="stylesheet" media="screen" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<style>
+	.flex{display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex;}
+	.jc-sp_btwn{justify-content: space-between;}
+	.jc-center{justify-content: center;}
+	.ai-center{align-items: center;}
+	.ff-col{flex-flow: column;}
+	.ta-center{text-align: center;}
+</style>
+<body>
+
+	<div class="container">
+		<!--Header Starts Here-->
+		<header>
+			<div class="upper">
+				<div class="logo">
+					<img src="assets/images/logo.png" alt="">
+				</div>
+				<div class="search-bar">
+					<input type="search">
+				</div>	
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a class="active" href="#">doctors</a>
+					</li>
+					<li>
+						<a href="#">locations</a>
+					</li>
+					<li>
+						<a href="#">condtions and sevices</a>
+					</li>
+					<li>
+						<a href="#">PATIENTS AND VISITORS</a>
+					</li>
+					<li>
+						<a href="#">HEALTHBEAT</a>
+					</li>
+					<li>
+						<a href="#">CLINICAL RESEARCH</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--Header Starts Ends-->
+		<!--Main Starts Here-->
+		<main>
+			<div class="search-box">
+				<div class="flx">
+					<p class="txt">4693 doctor results </p>
+					<form action="">
+						<input class="main-search" type="search" placeholder="Search doctors by name,Specialty or practice focus area">
+						<button class="fas fa-search"></button>
+					</form>
+					<!-- <div class="flex">
+						<input class="main-search" type="search" placeholder="Search doctors by name,Specialty or practice focus area">
+						<span class="fas fa-search"></span>
+					</div> -->
+					<p class="sort">Sort By</p>
+				</div>
+			</div>
+			<section class="profile_sec">
+				<aside>
+					<h2>Filter Your Results</h2>
+					<p>Specialty</p>
+					<ul class="aside_links">
+						<li>
+							<a href="#">Internal Medicine</a>
+						</li>
+						<li>
+							<a href="#">Family Medicine	</a>
+						</li>
+						<li>
+							<a href="#">Obstetrics and Gynecology</a>
+						</li>
+						<li>
+							<a href="#">Orthopaedic Surgery</a>
+						</li>
+						<li>
+							<a href="#">Gastroenterology</a>
+						</li>
+					</ul>
+					<a href="#">VIEW ALL</a></span>
+				</aside>
+				<div class="profiles">
+					<ul class="flex">
+						<li class="prof ta-center" >
+							<div class="img-box">
+								<div class="flex ai-center">
+									<img src="assets/images/profiles/1689603268.jpg" alt="">
+									<div class="name_pad">
+										<h3>Grazia Aleppo, MD</h3>
+										<div class="flex ai-center">
+											<span class="fas fa-map-marker-alt"></span>
+											<span class="distance">0.01  mi</span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="rating">
+								<div class="flex jc-center ai-center">
+									<p class="rating_point">4.9</p>
+									<ul class="rating_stars">
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+									</ul>
+								</div>
+								<p>206 Ratings</p>
+							</div>
+							<div class="desig">
+								<div class="flex jc-center ai-center">
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+								</div>
+								<p>Professor, <br>
+								Feingberg School of Medicine</p>
+							</div>
+							<div class="view-box">
+								<h4>Endocrinology</h4>
+								<p class="flex jc-center ai-center"> <span class="dot"></span>Accepts New Patients </p>
+								<a class="view_cta flex ai-center jc-center" href="#">
+									<span class="fas fa-info-circle"></span>
+									VIEW PROFILE
+								</a>
+							</div>
+						</li>
+						<li class="prof ta-center" >
+							<div class="img-box">
+								<div class="flex ai-center">
+									<img src="assets/images/profiles/1023261138.jpg" alt="">
+									<div class="name_pad">
+										<h3>Grazia Aleppo, MD</h3>
+										<div class="flex ai-center">
+											<span class="fas fa-map-marker-alt"></span>
+											<span class="distance">0.01  mi</span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="rating">
+								<div class="flex jc-center ai-center">
+									<p class="rating_point">4.9</p>
+									<ul class="rating_stars">
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+									</ul>
+								</div>
+								<p>206 Ratings</p>
+							</div>
+							<div class="desig">
+								<div class="flex jc-center ai-center">
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+								</div>
+								<p>Professor, <br>
+								Feingberg School of Medicine</p>
+							</div>
+							<div class="view-box">
+								<h4>Endocrinology</h4>
+								<p class="flex jc-center ai-center"> <span class="dot"></span>Accepts New Patients </p>
+								<a class="view_cta flex ai-center jc-center" href="#">
+									<span class="fas fa-info-circle"></span>
+									VIEW PROFILE
+								</a>
+							</div>
+						</li>
+						<li class="prof ta-center" >
+							<div class="img-box">
+								<div class="flex ai-center">
+									<img src="assets/images/profiles/1225337017.jpg" alt="">
+									<div class="name_pad">
+										<h3>Grazia Aleppo, MD</h3>
+										<div class="flex ai-center">
+											<span class="fas fa-map-marker-alt"></span>
+											<span class="distance">0.01  mi</span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="rating">
+								<div class="flex jc-center ai-center">
+									<p class="rating_point">4.9</p>
+									<ul class="rating_stars">
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+									</ul>
+								</div>
+								<p>206 Ratings</p>
+							</div>
+							<div class="desig">
+								<div class="flex jc-center ai-center">
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+								</div>
+								<p>Professor, <br>
+								Feingberg School of Medicine</p>
+							</div>
+							<div class="view-box">
+								<h4>Endocrinology</h4>
+								<p class="flex jc-center ai-center"> <span class="dot"></span>Accepts New Patients </p>
+								<a class="view_cta flex ai-center jc-center" href="#">
+									<span class="fas fa-info-circle"></span>
+									VIEW PROFILE
+								</a>
+							</div>
+						</li>
+						<li class="prof ta-center" >
+							<div class="img-box">
+								<div class="flex ai-center">
+									<img src="assets/images/profiles/1235346941.jpg" alt="">
+									<div class="name_pad">
+										<h3>Grazia Aleppo, MD</h3>
+										<div class="flex ai-center">
+											<span class="fas fa-map-marker-alt"></span>
+											<span class="distance">0.01  mi</span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="rating">
+								<div class="flex jc-center ai-center">
+									<p class="rating_point">4.9</p>
+									<ul class="rating_stars">
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+									</ul>
+								</div>
+								<p>206 Ratings</p>
+							</div>
+							<div class="desig">
+								<div class="flex jc-center ai-center">
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+								</div>
+								<p>Professor, <br>
+								Feingberg School of Medicine</p>
+							</div>
+							<div class="view-box">
+								<h4>Endocrinology</h4>
+								<p class="flex jc-center ai-center"> <span class="dot"></span>Accepts New Patients </p>
+								<a class="view_cta flex ai-center jc-center" href="#">
+									<span class="fas fa-info-circle"></span>
+									VIEW PROFILE
+								</a>
+							</div>
+						</li>
+						<li class="prof ta-center" >
+							<div class="img-box">
+								<div class="flex ai-center">
+									<img src="assets/images/profiles/1326103151.jpg" alt="">
+									<div class="name_pad">
+										<h3>Grazia Aleppo, MD</h3>
+										<div class="flex ai-center">
+											<span class="fas fa-map-marker-alt"></span>
+											<span class="distance">0.01  mi</span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="rating">
+								<div class="flex jc-center ai-center">
+									<p class="rating_point">4.9</p>
+									<ul class="rating_stars">
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+									</ul>
+								</div>
+								<p>206 Ratings</p>
+							</div>
+							<div class="desig">
+								<div class="flex jc-center ai-center">
+									<span class="med_grp"><img src="assets/images/north.jpg" alt="">Northwestern Medical Group</span>
+								</div>
+								<p>Professor, <br>
+								Feingberg School of Medicine</p>
+							</div>
+							<div class="view-box">
+								<h4>Endocrinology</h4>
+								<p class="flex jc-center ai-center"> <span class="dot"></span>Accepts New Patients </p>
+								<a class="view_cta flex ai-center jc-center" href="#">
+									<span class="fas fa-info-circle"></span>
+									VIEW PROFILE
+								</a>
+							</div>
+						</li>
+						<li class="prof ta-center" >
+							<div class="img-box">
+								<div class="flex ai-center">
+									<img src="assets/images/profiles/1396954269.jpg" alt="">
+									<div class="name_pad">
+										<h3>Grazia Aleppo, MD</h3>
+										<div class="flex ai-center">
+											<span class="fas fa-map-marker-alt"></span>
+											<span class="distance">0.01  mi</span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="rating">
+								<div class="flex jc-center ai-center">
+									<p class="rating_point">4.9</p>
+									<ul class="rating_stars">
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+									</ul>
+								</div>
+								<p>206 Ratings</p>
+							</div>
+							<div class="desig">
+								<div class="flex jc-center ai-center">
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+								</div>
+								<p>Professor, <br>
+								Feingberg School of Medicine</p>
+							</div>
+							<div class="view-box">
+								<h4>Endocrinology</h4>
+								<p class="flex jc-center ai-center"> <span class="dot"></span>Accepts New Patients </p>
+								<a class="view_cta flex ai-center jc-center" href="#">
+									<span class="fas fa-info-circle"></span>
+									VIEW PROFILE
+								</a>
+							</div>
+						</li>
+						<li class="prof ta-center" >
+							<div class="img-box">
+								<div class="flex ai-center">
+									<img src="assets/images/profiles/1609807635.jpg" alt="">
+									<div class="name_pad">
+										<h3>Grazia Aleppo, MD</h3>
+										<div class="flex ai-center">
+											<span class="fas fa-map-marker-alt"></span>
+											<span class="distance">0.01  mi</span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="rating">
+								<div class="flex jc-center ai-center">
+									<p class="rating_point">4.9</p>
+									<ul class="rating_stars">
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+									</ul>
+								</div>
+								<p>206 Ratings</p>
+							</div>
+							<div class="desig">
+								<div class="flex jc-center ai-center">
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+								</div>
+								<p>Professor, <br>
+								Feingberg School of Medicine</p>
+							</div>
+							<div class="view-box">
+								<h4>Endocrinology</h4>
+								<p class="flex jc-center ai-center"> <span class="dot"></span>Accepts New Patients </p>
+								<a class="view_cta flex ai-center jc-center" href="#">
+									<span class="fas fa-info-circle"></span>
+									VIEW PROFILE
+								</a>
+							</div>
+						</li>
+						<li class="prof ta-center" >
+							<div class="img-box">
+								<div class="flex ai-center">
+									<img src="assets/images/profiles/1649410036.jpg" alt="">
+									<div class="name_pad">
+										<h3>Grazia Aleppo, MD</h3>
+										<div class="flex ai-center">
+											<span class="fas fa-map-marker-alt"></span>
+											<span class="distance">0.01  mi</span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="rating">
+								<div class="flex jc-center ai-center">
+									<p class="rating_point">4.9</p>
+									<ul class="rating_stars">
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+									</ul>
+								</div>
+								<p>206 Ratings</p>
+							</div>
+							<div class="desig">
+								<div class="flex jc-center ai-center">
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+								</div>
+								<p>Professor, <br>
+								Feingberg School of Medicine</p>
+							</div>
+							<div class="view-box">
+								<h4>Endocrinology</h4>
+								<p class="flex jc-center ai-center"> <span class="dot"></span>Accepts New Patients </p>
+								<a class="view_cta flex ai-center jc-center" href="#">
+									<span class="fas fa-info-circle"></span>
+									VIEW PROFILE
+								</a>
+							</div>
+						</li>
+						<li class="prof ta-center" >
+							<div class="img-box">
+								<div class="flex ai-center">
+									<img src="assets/images/profiles/1881656411.jpg" alt="">
+									<div class="name_pad">
+										<h3>Grazia Aleppo, MD</h3>
+										<div class="flex ai-center">
+											<span class="fas fa-map-marker-alt"></span>
+											<span class="distance">0.01  mi</span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="rating">
+								<div class="flex jc-center ai-center">
+									<p class="rating_point">4.9</p>
+									<ul class="rating_stars">
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+										<li class="fas fa-star"></li>
+									</ul>
+								</div>
+								<p>206 Ratings</p>
+							</div>
+							<div class="desig">
+								<div class="flex jc-center ai-center">
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+								</div>
+								<p>Professor, <br>
+								Feingberg School of Medicine</p>
+							</div>
+							<div class="view-box">
+								<h4>Endocrinology</h4>
+								<p class="flex jc-center ai-center"> <span class="dot"></span>Accepts New Patients </p>
+								<a class="view_cta flex ai-center jc-center" href="#">
+									<span class="fas fa-info-circle"></span>
+									VIEW PROFILE
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		</main>
+		<!--Main Ends Here-->
+		<!--Footer Starts Here-->
+		<footer>	
+		</footer>
+		<!--Footer Ends Here-->
+	</div>
+</body>
+</html>
