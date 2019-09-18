@@ -1,13 +1,14 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<!-- Setting the viewport for Media Query -->
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Framework</title>
 	<!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-	<link rel="shortcut icon" href="favicon.ico" />	
+	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- Adding reference to font awesome -->
 	<link rel="stylesheet" href="assets/vendor/font/fontawesome-all.min.css">
 	<!-- Default style-sheet is for 'media' type screen (color computer display).  -->
@@ -15,13 +16,35 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
 </head>
 <style>
-	.flex{display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex;}
-	.jc-sp_btwn{justify-content: space-between;}
-	.jc-center{justify-content: center;}
-	.ai-center{align-items: center;}
-	.ff-col{flex-flow: column;}
-	.ta-center{text-align: center;}
+	.flex {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+
+	.jc-sp_btwn {
+		justify-content: space-between;
+	}
+
+	.jc-center {
+		justify-content: center;
+	}
+
+	.ai-center {
+		align-items: center;
+	}
+
+	.ff-col {
+		flex-flow: column;
+	}
+
+	.ta-center {
+		text-align: center;
+	}
 </style>
+
 <body>
 
 	<div class="container">
@@ -33,7 +56,7 @@
 				</div>
 				<div class="search-bar">
 					<input type="search">
-				</div>	
+				</div>
 			</div>
 			<nav>
 				<ul>
@@ -65,7 +88,8 @@
 				<div class="flx">
 					<p class="txt">4693 doctor results </p>
 					<form action="">
-						<input class="main-search" type="search" placeholder="Search doctors by name,Specialty or practice focus area">
+						<input class="main-search" type="search"
+							placeholder="Search doctors by name,Specialty or practice focus area">
 						<button class="fas fa-search"></button>
 					</form>
 					<!-- <div class="flex">
@@ -77,30 +101,35 @@
 			</div>
 			<section class="profile_sec">
 				<aside>
-					<h2>Filter Your Results</h2>
-					<p>Specialty</p>
-					<ul class="aside_links">
-						<li>
-							<a href="#">Internal Medicine</a>
-						</li>
-						<li>
-							<a href="#">Family Medicine	</a>
-						</li>
-						<li>
-							<a href="#">Obstetrics and Gynecology</a>
-						</li>
-						<li>
-							<a href="#">Orthopaedic Surgery</a>
-						</li>
-						<li>
-							<a href="#">Gastroenterology</a>
-						</li>
-					</ul>
-					<a href="#">VIEW ALL</a></span>
+					<div class="filter">
+						<p>FITER</p>
+					</div>
+					<div class="none_filter">
+						<h2>Filter Your Results</h2>
+						<p>Specialty</p>
+						<ul class="aside_links">
+							<li>
+								<a href="#">Internal Medicine</a>
+							</li>
+							<li>
+								<a href="#">Family Medicine </a>
+							</li>
+							<li>
+								<a href="#">Obstetrics and Gynecology</a>
+							</li>
+							<li>
+								<a href="#">Orthopaedic Surgery</a>
+							</li>
+							<li>
+								<a href="#">Gastroenterology</a>
+							</li>
+						</ul>
+						<a href="#">VIEW ALL</a></span>
+					</div>
 				</aside>
 				<div class="profiles">
 					<ul class="flex">
-						<li class="prof ta-center" >
+						<li class="prof ta-center">
 							<div class="img-box">
 								<div class="flex ai-center">
 									<img src="assets/images/profiles/1689603268.jpg" alt="">
@@ -108,11 +137,11 @@
 										<h3>Grazia Aleppo, MD</h3>
 										<div class="flex ai-center">
 											<span class="fas fa-map-marker-alt"></span>
-											<span class="distance">0.01  mi</span>
+											<span class="distance">0.01 mi</span>
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="rating">
 								<div class="flex jc-center ai-center">
@@ -129,21 +158,22 @@
 							</div>
 							<div class="desig">
 								<div class="flex jc-center ai-center">
-									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern
+										Medical Group</span>
 								</div>
 								<p>Professor, <br>
-								Feingberg School of Medicine</p>
+									Feingberg School of Medicine</p>
 							</div>
 							<div class="view-box">
 								<h4>Endocrinology</h4>
 								<p class="flex jc-center ai-center"> <span class="dot"></span>Accepts New Patients </p>
-								<a class="view_cta flex ai-center jc-center" href="#">
+								<a class="view_cta flex ai-center jc-center" id="myBtn" href="#">
 									<span class="fas fa-info-circle"></span>
 									VIEW PROFILE
 								</a>
 							</div>
 						</li>
-						<li class="prof ta-center" >
+						<li class="prof ta-center">
 							<div class="img-box">
 								<div class="flex ai-center">
 									<img src="assets/images/profiles/1023261138.jpg" alt="">
@@ -151,11 +181,11 @@
 										<h3>Grazia Aleppo, MD</h3>
 										<div class="flex ai-center">
 											<span class="fas fa-map-marker-alt"></span>
-											<span class="distance">0.01  mi</span>
+											<span class="distance">0.01 mi</span>
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="rating">
 								<div class="flex jc-center ai-center">
@@ -172,10 +202,11 @@
 							</div>
 							<div class="desig">
 								<div class="flex jc-center ai-center">
-									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern
+										Medical Group</span>
 								</div>
 								<p>Professor, <br>
-								Feingberg School of Medicine</p>
+									Feingberg School of Medicine</p>
 							</div>
 							<div class="view-box">
 								<h4>Endocrinology</h4>
@@ -186,7 +217,7 @@
 								</a>
 							</div>
 						</li>
-						<li class="prof ta-center" >
+						<li class="prof ta-center">
 							<div class="img-box">
 								<div class="flex ai-center">
 									<img src="assets/images/profiles/1225337017.jpg" alt="">
@@ -194,11 +225,11 @@
 										<h3>Grazia Aleppo, MD</h3>
 										<div class="flex ai-center">
 											<span class="fas fa-map-marker-alt"></span>
-											<span class="distance">0.01  mi</span>
+											<span class="distance">0.01 mi</span>
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="rating">
 								<div class="flex jc-center ai-center">
@@ -215,10 +246,11 @@
 							</div>
 							<div class="desig">
 								<div class="flex jc-center ai-center">
-									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern
+										Medical Group</span>
 								</div>
 								<p>Professor, <br>
-								Feingberg School of Medicine</p>
+									Feingberg School of Medicine</p>
 							</div>
 							<div class="view-box">
 								<h4>Endocrinology</h4>
@@ -229,7 +261,7 @@
 								</a>
 							</div>
 						</li>
-						<li class="prof ta-center" >
+						<li class="prof ta-center">
 							<div class="img-box">
 								<div class="flex ai-center">
 									<img src="assets/images/profiles/1235346941.jpg" alt="">
@@ -237,11 +269,11 @@
 										<h3>Grazia Aleppo, MD</h3>
 										<div class="flex ai-center">
 											<span class="fas fa-map-marker-alt"></span>
-											<span class="distance">0.01  mi</span>
+											<span class="distance">0.01 mi</span>
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="rating">
 								<div class="flex jc-center ai-center">
@@ -258,10 +290,11 @@
 							</div>
 							<div class="desig">
 								<div class="flex jc-center ai-center">
-									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern
+										Medical Group</span>
 								</div>
 								<p>Professor, <br>
-								Feingberg School of Medicine</p>
+									Feingberg School of Medicine</p>
 							</div>
 							<div class="view-box">
 								<h4>Endocrinology</h4>
@@ -272,7 +305,7 @@
 								</a>
 							</div>
 						</li>
-						<li class="prof ta-center" >
+						<li class="prof ta-center">
 							<div class="img-box">
 								<div class="flex ai-center">
 									<img src="assets/images/profiles/1326103151.jpg" alt="">
@@ -280,11 +313,11 @@
 										<h3>Grazia Aleppo, MD</h3>
 										<div class="flex ai-center">
 											<span class="fas fa-map-marker-alt"></span>
-											<span class="distance">0.01  mi</span>
+											<span class="distance">0.01 mi</span>
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="rating">
 								<div class="flex jc-center ai-center">
@@ -301,10 +334,11 @@
 							</div>
 							<div class="desig">
 								<div class="flex jc-center ai-center">
-									<span class="med_grp"><img src="assets/images/north.jpg" alt="">Northwestern Medical Group</span>
+									<span class="med_grp"><img src="assets/images/north.jpg" alt="">Northwestern Medical
+										Group</span>
 								</div>
 								<p>Professor, <br>
-								Feingberg School of Medicine</p>
+									Feingberg School of Medicine</p>
 							</div>
 							<div class="view-box">
 								<h4>Endocrinology</h4>
@@ -315,7 +349,7 @@
 								</a>
 							</div>
 						</li>
-						<li class="prof ta-center" >
+						<li class="prof ta-center">
 							<div class="img-box">
 								<div class="flex ai-center">
 									<img src="assets/images/profiles/1396954269.jpg" alt="">
@@ -323,11 +357,11 @@
 										<h3>Grazia Aleppo, MD</h3>
 										<div class="flex ai-center">
 											<span class="fas fa-map-marker-alt"></span>
-											<span class="distance">0.01  mi</span>
+											<span class="distance">0.01 mi</span>
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="rating">
 								<div class="flex jc-center ai-center">
@@ -344,10 +378,11 @@
 							</div>
 							<div class="desig">
 								<div class="flex jc-center ai-center">
-									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern
+										Medical Group</span>
 								</div>
 								<p>Professor, <br>
-								Feingberg School of Medicine</p>
+									Feingberg School of Medicine</p>
 							</div>
 							<div class="view-box">
 								<h4>Endocrinology</h4>
@@ -358,7 +393,7 @@
 								</a>
 							</div>
 						</li>
-						<li class="prof ta-center" >
+						<li class="prof ta-center">
 							<div class="img-box">
 								<div class="flex ai-center">
 									<img src="assets/images/profiles/1609807635.jpg" alt="">
@@ -366,11 +401,11 @@
 										<h3>Grazia Aleppo, MD</h3>
 										<div class="flex ai-center">
 											<span class="fas fa-map-marker-alt"></span>
-											<span class="distance">0.01  mi</span>
+											<span class="distance">0.01 mi</span>
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="rating">
 								<div class="flex jc-center ai-center">
@@ -387,10 +422,11 @@
 							</div>
 							<div class="desig">
 								<div class="flex jc-center ai-center">
-									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern
+										Medical Group</span>
 								</div>
 								<p>Professor, <br>
-								Feingberg School of Medicine</p>
+									Feingberg School of Medicine</p>
 							</div>
 							<div class="view-box">
 								<h4>Endocrinology</h4>
@@ -401,7 +437,7 @@
 								</a>
 							</div>
 						</li>
-						<li class="prof ta-center" >
+						<li class="prof ta-center">
 							<div class="img-box">
 								<div class="flex ai-center">
 									<img src="assets/images/profiles/1649410036.jpg" alt="">
@@ -409,11 +445,11 @@
 										<h3>Grazia Aleppo, MD</h3>
 										<div class="flex ai-center">
 											<span class="fas fa-map-marker-alt"></span>
-											<span class="distance">0.01  mi</span>
+											<span class="distance">0.01 mi</span>
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="rating">
 								<div class="flex jc-center ai-center">
@@ -430,10 +466,11 @@
 							</div>
 							<div class="desig">
 								<div class="flex jc-center ai-center">
-									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern
+										Medical Group</span>
 								</div>
 								<p>Professor, <br>
-								Feingberg School of Medicine</p>
+									Feingberg School of Medicine</p>
 							</div>
 							<div class="view-box">
 								<h4>Endocrinology</h4>
@@ -444,7 +481,7 @@
 								</a>
 							</div>
 						</li>
-						<li class="prof ta-center" >
+						<li class="prof ta-center">
 							<div class="img-box">
 								<div class="flex ai-center">
 									<img src="assets/images/profiles/1881656411.jpg" alt="">
@@ -452,11 +489,11 @@
 										<h3>Grazia Aleppo, MD</h3>
 										<div class="flex ai-center">
 											<span class="fas fa-map-marker-alt"></span>
-											<span class="distance">0.01  mi</span>
+											<span class="distance">0.01 mi</span>
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="rating">
 								<div class="flex jc-center ai-center">
@@ -473,10 +510,11 @@
 							</div>
 							<div class="desig">
 								<div class="flex jc-center ai-center">
-									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern Medical Group</span>
+									<span class="med_grp"><img src="assets/images/north.jpg" alt=""> Northwestern
+										Medical Group</span>
 								</div>
 								<p>Professor, <br>
-								Feingberg School of Medicine</p>
+									Feingberg School of Medicine</p>
 							</div>
 							<div class="view-box">
 								<h4>Endocrinology</h4>
@@ -490,13 +528,210 @@
 					</ul>
 				</div>
 			</section>
+			<div class="main-wrapper">
+				<!-- Trigger/Open The Modal -->
+				<button id="myBtn" class="modalbtn">Open Modal</button>
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<!-- <span class="close">&times;</span> -->
+						<div>
+							<span class="close">
+								<svg version="1.1" height="20pt" width="20pt" id="Capa_1"
+									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+									x="0px" y="0px" viewBox="0 0 51.976 51.976" xml:space="preserve">
+									<g>
+										<path d="M44.373,7.603c-10.137-10.137-26.632-10.138-36.77,0c-10.138,10.138-10.137,26.632,0,36.77s26.632,10.138,36.77,0
+															C54.51,34.235,54.51,17.74,44.373,7.603z M36.241,36.241c-0.781,0.781-2.047,0.781-2.828,0l-7.425-7.425l-7.778,7.778
+															c-0.781,0.781-2.047,0.781-2.828,0c-0.781-0.781-0.781-2.047,0-2.828l7.778-7.778l-7.425-7.425c-0.781-0.781-0.781-2.048,0-2.828
+															c0.781-0.781,2.047-0.781,2.828,0l7.425,7.425l7.071-7.071c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828
+															l-7.071,7.071l7.425,7.425C37.022,34.194,37.022,35.46,36.241,36.241z" />
+									</g>
+								</svg>
+							</span>
+						</div>
+
+						<div class="top-profile">
+							<div class="profile-detail">
+								<!-- <div class="data"></div> -->
+								<div class="doc-info">
+									<div class="photo-circle">
+										<img src="assets/images/profiles/1689603268.jpg" alt="">
+									</div>
+									<div class="doc-name"></div>
+									<div class="wrapper">
+										<span class="rating">
+											4.9
+										</span>
+										<span class="stars">
+											<span class="fas fa-star"></span>
+											<span class="fas fa-star"></span>
+											<span class="fas fa-star"></span>
+											<span class="fas fa-star"></span>
+											<span class="fas fa-star"></span>
+											<!-- <input type="checkbox" id="st1" value="1" />
+										<label for="st1"></label>
+										<input type="checkbox" id="st2" value="2" />
+										<label for="st2"></label>
+										<input type="checkbox" id="st3" value="3" />
+										<label for="st3"></label>
+										<input type="checkbox" id="st4" value="4" />
+										<label for="st4"></label>
+										<input type="checkbox" id="st5" value="5" />
+										<label for="st5"></label> -->
+										</span>
+									</div>
+									<div class="rate">
+
+									</div>
+									<div class="rating-count">
+										<p class="count">
+											<span>206</span> <span>Ratings</span>
+										</p>
+										<a href="javascript:void(0)">
+											<span class="rating-review">
+												Read Ratings & Reviews
+											</span>
+										</a>
+										<a target="_blank" class="meet-doc " href="#">
+											<span class="play">
+												<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													viewBox="0 0 60 60" xml:space="preserve">
+													<path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M45.563,30.826l-22,15
+											C23.394,45.941,23.197,46,23,46c-0.16,0-0.321-0.038-0.467-0.116C22.205,45.711,22,45.371,22,45V15c0-0.371,0.205-0.711,0.533-0.884
+											c0.328-0.174,0.724-0.15,1.031,0.058l22,15C45.836,29.36,46,29.669,46,30S45.836,30.64,45.563,30.826z" />
+												</svg>
+											</span>
+											<span class="meet-text">Meet The Doctor</span>
+										</a>
+									</div>
+								</div>
+								<div class="doc-data">
+									<p class="doc-degree">
+										Grazia Aleppo, MD
+									</p>
+									<p class="work">
+										Northwestern Medical Group
+									</p>
+									<p class="speciality">
+										Primary Specialty
+									</p>
+									<p class="specialist-detail">
+										Endocrinology
+									</p>
+									<p class="status">
+										<!-- <div class="green customcb">
+											<input type="checkbox" class="status-detail" checked value="1"
+												id="customcb3" name="" />
+											<label class="inner" for="customcb3"></label>
+											<label class="outer" for="customcb3">Accepts New Patients</label>
+										</div> -->
+										<p class="flex align-status"> <span class="dot"></span>Accepts New
+											Patients </p>
+									</p>
+								</div>
+								<div class="appointment">
+									<a class="reqbtn">
+										<span class="id">
+											<svg height="20pt" viewBox="-90 -19 605 605.33331" width="20pt"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="m207.917969 301.25c35.691406 0 64.621093-28.9375 64.621093-64.625 0-35.691406-28.929687-64.625-64.621093-64.625-35.695313 0-64.625 28.933594-64.625 64.625.042969 35.671875 28.949219 64.578125 64.625 64.625zm0-104.125c21.882812 0 39.621093 17.738281 39.621093 39.625 0 21.882812-17.738281 39.625-39.621093 39.625-21.886719 0-39.625-17.742188-39.625-39.625.003906-21.882812 17.742187-39.617188 39.625-39.625zm0 0" />
+												<path
+													d="m207.917969 325.125c-26.441407-.195312-51.816407 10.417969-70.25 29.375-18.75 19.125-29 45.125-29 73.375.019531 6.894531 5.601562 12.480469 12.5 12.5h173.496093c6.898438-.019531 12.480469-5.605469 12.5-12.5 0-28.25-10.25-54.25-29-73.375-18.429687-18.957031-43.808593-29.570312-70.246093-29.375zm-73.375 90.25c2.136719-16.34375 9.507812-31.554688 21-43.375 13.832031-13.996094 32.695312-21.875 52.375-21.875 19.675781 0 38.539062 7.878906 52.371093 21.875 11.46875 11.832031 18.832032 27.039062 21 43.375zm0 0" />
+												<path
+													d="m357.917969 0h-300c-34.511719.015625-62.488281 27.988281-62.5 62.5v442.5c.011719 34.511719 27.988281 62.484375 62.5 62.5h300c34.511719-.015625 62.484375-27.988281 62.5-62.5v-442.5c-.015625-34.511719-27.988281-62.484375-62.5-62.5zm37.5 505c-.058594 20.683594-16.816407 37.441406-37.5 37.5h-300c-20.683594-.058594-37.441407-16.816406-37.5-37.5v-442.5c.058593-20.683594 16.816406-37.441406 37.5-37.5h300c20.683593.058594 37.441406 16.816406 37.5 37.5zm0 0" />
+												<path
+													d="m155.792969 83.875h100c6.902343 0 12.5-5.597656 12.5-12.5s-5.597657-12.5-12.5-12.5h-100c-6.90625 0-12.5 5.597656-12.5 12.5s5.59375 12.5 12.5 12.5zm0 0" />
+											</svg>
+										</span>
+										<span class="req-text">
+											Request Appointment
+										</span>
+									</a>
+									<a class="reqbtn pdfbtn">
+										<span class="pdf">
+											<svg class="pdf" version="1.1" id="Layer_1" height="18pt" width="18pt"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<g>
+													<g>
+														<g>
+															<path d="M444.875,109.792L338.208,3.125c-2-2-4.708-3.125-7.542-3.125h-224C83.135,0,64,19.135,64,42.667v426.667
+											C64,492.865,83.135,512,106.667,512h298.667C428.865,512,448,492.865,448,469.333v-352
+											C448,114.5,446.875,111.792,444.875,109.792z M341.333,36.417l70.25,70.25h-48.917c-11.76,0-21.333-9.573-21.333-21.333V36.417z
+											M426.667,469.333c0,11.76-9.573,21.333-21.333,21.333H106.667c-11.76,0-21.333-9.573-21.333-21.333V42.667
+											c0-11.76,9.573-21.333,21.333-21.333H320v64C320,108.865,339.135,128,362.667,128h64V469.333z" />
+															<path
+																d="M310.385,313.135c-9.875-7.771-19.26-15.76-25.51-22.01c-8.125-8.125-15.365-16-21.656-23.5
+											c9.813-30.323,14.115-45.958,14.115-54.292c0-35.406-12.792-42.667-32-42.667c-14.594,0-32,7.583-32,43.688
+											c0,15.917,8.719,35.24,26,57.698c-4.229,12.906-9.198,27.792-14.781,44.573c-2.688,8.052-5.604,15.51-8.688,22.406
+											c-2.51,1.115-4.948,2.25-7.302,3.427c-8.479,4.24-16.531,8.052-24,11.594C150.5,370.177,128,380.844,128,401.906
+											c0,15.292,16.615,24.76,32,24.76c19.833,0,49.781-26.49,71.656-71.115c22.708-8.958,50.938-15.594,73.219-19.75
+											c17.854,13.729,37.573,26.865,47.125,26.865c26.448,0,32-15.292,32-28.115c0-25.219-28.813-25.219-42.667-25.219
+											C337.031,309.333,325.49,310.604,310.385,313.135z M160,405.333c-6.094,0-10.219-2.875-10.667-3.427
+											c0-7.563,22.552-18.25,44.365-28.583c1.385-0.656,2.792-1.313,4.219-1.99C181.896,394.563,166.052,405.333,160,405.333z
+											M234.667,214.354c0-22.354,6.938-22.354,10.667-22.354c7.542,0,10.667,0,10.667,21.333c0,4.5-3,15.75-8.49,33.313
+											C239.135,233.75,234.667,222.698,234.667,214.354z M242.844,329c0.667-1.854,1.313-3.729,1.938-5.625
+											c3.958-11.875,7.521-22.542,10.698-32.146c4.427,4.875,9.198,9.865,14.313,14.979c2,2,6.958,6.5,13.563,12.135
+											C270.208,321.208,256.219,324.76,242.844,329z M362.667,334.552c0,4.792,0,6.781-9.896,6.844
+											c-2.906-0.625-9.625-4.583-17.917-10.229c3.01-0.333,5.229-0.5,6.479-0.5C357.094,330.667,361.563,332.208,362.667,334.552z" />
+														</g>
+													</g>
+												</g>
+											</svg>
+										</span>
+										<span class="req-text pdf-text">
+											Export Pdf
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
 
 		</main>
 		<!--Main Ends Here-->
 		<!--Footer Starts Here-->
-		<footer>	
+		<footer>
 		</footer>
 		<!--Footer Ends Here-->
 	</div>
 </body>
+<script>
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function () {
+		modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function (event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+</script>
+
 </html>
